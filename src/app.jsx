@@ -1,9 +1,7 @@
 import React,{Component} from 'react';
 import {Row,Col} from 'antd';
 import Leftnav from './containers/leftNav.jsx'
-import RouteView from './router/router.js'
-
-
+import RouteView from './router/router.js';
 
 class App extends Component {
 	conustructor(){
@@ -20,6 +18,7 @@ class App extends Component {
 				</Col>
 			</Row>
 		</div>
+		// return (<div><div><Leftnav></Leftnav></div><div><RouteView/></div></div>)
 	}
 }
 

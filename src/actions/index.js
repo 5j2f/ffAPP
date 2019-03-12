@@ -6,8 +6,17 @@
 // export const getChange=value=>(getstate,dispatch)=>{
 // 	console.log(gestate)
 // }
+
 export const getChange=value=>{
-	return (getstate,dispatch)=>{
-			console.log(getstate)
+	return (dispatch,getstate)=>{
+			// console.log(getstate)
+			dispatch({
+				type:'getVlue',
+				key:value
+			})
 		}
 }
+export const testReduxOnly=value=>({
+	type:'reduxOnly',
+	key:value
+})

@@ -1,12 +1,10 @@
 
- const change = (store=[],action) =>{
+ const change = (store={},action) =>{
 	if(action.key){
-		return [
+		return {
 			...store,
-			{
-				key:action.key
-			}
-		]
+			key11:action.key
+		}
 	}
 }
 export default change

@@ -5,7 +5,9 @@ function leftNav(){
 	return <div>
 		<Link to="/home">home</Link>
 		<hr/>
-		<Link to="/test">test</Link>
+		<Link to="/testReactRedux">testReactRedux</Link>
+		<hr/>
+		<Link to="/shouldComPonentUpdate">shouldComPonentUpdate</Link>
 	</div>
 }
 export default leftNav;

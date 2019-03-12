@@ -1,16 +1,26 @@
 import React from 'react'
 import {Route} from 'react-router-dom'
 import home from '../containers/home.jsx';
-import test from '../containers/test.jsx';
+import testReactRedux from '../containers/testReactRedux.jsx';
+import textRedux from '../containers/testRedux.jsx';
+import shouldComponentUpdate from '../components/shouldComponentUpdate.jsx';
 const routs=[
 	{
 		path:'/home',
 		component:home
 	},
+	{
+		path:'/testReactRedux',
+		component:testReactRedux
+	},
 	// {
-	// 	path:'/test',
-	// 	component:test
+	// 	path:'/textRedux',
+	// 	component:textRedux
 	// }
+	{
+		path:'/shouldComponentUpdate',
+		component:shouldComponentUpdate
+	}
 ]
 function routerView (){
 	return <div>

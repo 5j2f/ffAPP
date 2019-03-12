@@ -1,5 +1,7 @@
 const path=require('path');
 const HtmlWebpackPlugin=require('html-webpack-plugin');
+const webpack=require('webpack');
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 module.exports={
 	mode:'development',
@@ -24,10 +26,17 @@ module.exports={
 		]
 	},
 	plugins:[
+		// new webpack.DllReferencePlugin({
+  //           context: __dirname,
+  //           manifest: require('../manifest.json'),
+  //       }),
 		new HtmlWebpackPlugin({
 			filename:'index.html',
 			template:path.resolve(__dirname,'../public/index.html')
-		})
+		}),
+		// new BundleAnalyzerPlugin()
+		
+
 	],
 	devServer:{
 		port:9001,
